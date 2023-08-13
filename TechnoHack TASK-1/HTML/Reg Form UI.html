@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link rel="stylesheet" href="/CSS/styles.css">
+<link rel="script" href="/JS/script.js">
+
+</head>
+
+<body>
+<div class="container" autocapitalize="of" >
+  <h1 ><center>REGISTRATION FORM </center></h1>
+  <form id="registrationForm">
+    <div class="form-group">
+      <label for="user_name">Username:</label>
+      <input type="text" placeholder="Ener Username"  id="user_name" name="user_name" required>
+    </div>
+    <div class="form-group">
+      <label for="first_Name">First Name:</label>
+      <input type="text" id="first_Name" placeholder="Enter First_Name"  name="first_Name" required>
+    </div>
+    <div class="form-group">
+      <label for="Last_name">Last Name:</label>
+      <input type="text" id="Last_name"  placeholder="Enter Last_name" name="Last_name" required>
+    </div>
+    <div class="form-group">
+      <label for="date_of_birth">Date of Birth:</label>
+      <input type="date" id="date_of_birth" placeholder=" Enter date_of_birth" name="date_of_birth" required>
+    </div>
+    <div class="form-group">
+      <label for="contact_number">Contact Number:</label>
+      <input type="tel" id="contact_number" placeholder="Enter contact_number" pattern="[0-9]{10}" maxlength="10" name="contact_number" >
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter the password" name="password"  required onkeyup='validatePassword();'>
+    </div>
+    <div class="form-group">
+      <label for="confirm_password">Confirm Password:</label>
+      <input type="password" id="confirm_password" placeholder="Enter the Confirm Password" name="confirm_password" onkeyup='validatePassword();' required>
+    </div>
+    <div class="form-group">
+      <button type="submit">Register</button>
+      <button type="reset" id="clear">Clear</button>
+    </div>
+  </form>
+  <p>Already have an account..? <a href="/HTML/login.html" target="_blank">Login</a></p>
+</div>
+<br><br>
+<footer>
+    <div  class="social-icons">
+        <caption><th><u>CONTACT</u> </th></caption>
+        <br>
+        <legend>        
+        <a href="https://wa.me/qr/MCMRNXE7SXYSD1" target="_blank"  title="whtasapp"> 
+          <i class="fa fa-facebook-square" aria-hidden="true" > <img src="/media/whatssapp.png"  width="40" height="40"></i>
+        </a>
+        <a href="https://instagram.com/__mr_unlky__?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" title="instagram" target="_blank">  
+          <i class="fa fa-instagram" aria-hidden="true"> <img src="/media/insta1.png" width="40" height="40" alt=""></i>
+        </a>
+        <a href="https://github.com/vrsathish15"  target="_blank" title="Git Hub"> 
+            <i class="fa fa-facebook-square" aria-hidden="true"  > <img src="/media/github.png"  width="40" height="40"></i>
+          </a>
+        
+        <a href="https://www.linkedin.com/in/nithish-kumar-v-r-117b7320a" target="_blank" title="linkedin">
+          <i class="fa fa-linkedin-square" aria-hidden="true"> <img src="/media/linkedin.png"  width="40" height="40" alt=""></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100016081355325&mibextid=ZbWKwL"  title="facebook" target="_blank" > 
+            <i class="fa fa-facebook-square" aria-hidden="true" > <img src="/media/face.png"  width="40" height="40"></i>
+          </a>
+        </legend>
+      </div>
+    </footer>
+<script src="/JS/script.js"></script>
+</body>
+</html>
